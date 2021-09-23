@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Timer</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel='stylesheet' href="styles/global.css" />
+  <link rel='stylesheet' href='styles/currency.css' />
+  <script type='text/javascript' rel='script' src='scripts/currency.js'></script>
+</head>
+<body>
+  <div class="board">
+    <h1 class="currency">
+      <span id="currency"></span>
+    </h1>
+  </div>
+  <div class="controller">
+    <div class='initial_control'>
+      <label>
+        <input id="initial" class="currency__input" type="text" onChange="ChangeCurrency()" onkeyup="ValidateValue(this)" value='3000' />
+      </label>
+    </div>
+    <div class='action_control'>
+      <label>
+        <input id="subtracted_value" class="currency__input" type="text" value='50' onkeyup='ValidateValue(this)' />
+      </label>
+      <input type="button" value="Subtracted Value" onclick="Subtract()">
+    </div>
+  </div>
+</body>
+</html>
